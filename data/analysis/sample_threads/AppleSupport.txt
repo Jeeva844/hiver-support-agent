@@ -1,0 +1,34 @@
+SAMPLE THREADS FOR AppleSupport
+
+============================================================
+
+CUSTOMER:  @115854 We're here for you. Which version of the iOS are you running? Check from Settings &gt; General &gt; About.
+BRAND:     @115854 We're here for you. Which version of the iOS are you running? Check from Settings &gt; General &gt; About.
+----
+CUSTOMER:  @115854 Lets take a closer look into this issue. Select the following link to join us in a DM and we'll go from there. https://t.co/GDrqU22YpT
+BRAND:     @115854 Lets take a closer look into this issue. Select the following link to join us in a DM and we'll go from there. https://t.co/GDrqU22YpT
+----
+CUSTOMER:  @115855 Let's go to DM for the next steps. DM us here: https://t.co/GDrqU22YpT
+BRAND:     @115855 Let's go to DM for the next steps. DM us here: https://t.co/GDrqU22YpT
+----
+CUSTOMER:  @115855 Any steps tried since it started last night?
+BRAND:     @115855 Any steps tried since it started last night?
+----
+CUSTOMER:  @115855 That's great it has iOS 11.1 as we can rule out being outdated. Any steps tried since this started? Do you recall when it started?
+BRAND:     @115855 That's great it has iOS 11.1 as we can rule out being outdated. Any steps tried since this started? Do you recall when it started?
+----
+CUSTOMER:  @115855 We'd like to look into this with you. Which model do you have and is iOS 11.1 installed? Any steps tried so far?
+BRAND:     @115855 We'd like to look into this with you. Which model do you have and is iOS 11.1 installed? Any steps tried so far?
+----
+CUSTOMER:  @115856 Hey, let's work together to figure out what's going on. Meet us in DM and we'll continue from there. https://t.co/GDrqU22YpT
+BRAND:     @115856 Hey, let's work together to figure out what's going on. Meet us in DM and we'll continue from there. https://t.co/GDrqU22YpT
+----
+CUSTOMER:  @115857 We'd like to investigate further with you. Send us a DM and we can troubleshoot more from there. https://t.co/GDrqU22YpT
+BRAND:     @115857 We'd like to investigate further with you. Send us a DM and we can troubleshoot more from there. https://t.co/GDrqU22YpT
+----
+CUSTOMER:  @115857 Fill us in on what is happening, then we can help out from there.
+BRAND:     @115857 Fill us in on what is happening, then we can help out from there.
+----
+CUSTOMER:  @115859 We've received your DM and will continue there.
+BRAND:     @115859 We've received your DM and will continue there.
+----

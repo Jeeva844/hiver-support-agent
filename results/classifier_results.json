@@ -1,0 +1,223 @@
+{
+  "model": "tfidf+logreg (weak labels)",
+  "n_train": 40372,
+  "golden_size": 200,
+  "accuracy": 0.74,
+  "macro_f1": 0.6909101506020493,
+  "weighted_f1": 0.7410338343725797,
+  "internal_val_accuracy_weak_labels": 0.9503405572755418,
+  "per_class_f1": {
+    "account_access": {
+      "precision": 0.9473684210526315,
+      "recall": 0.8181818181818182,
+      "f1": 0.8780487804878049,
+      "support": 22
+    },
+    "appreciation": {
+      "precision": 0.6842105263157895,
+      "recall": 0.65,
+      "f1": 0.6666666666666666,
+      "support": 20
+    },
+    "content_missing": {
+      "precision": 0.5263157894736842,
+      "recall": 0.9090909090909091,
+      "f1": 0.6666666666666666,
+      "support": 11
+    },
+    "device_compatibility": {
+      "precision": 0.2222222222222222,
+      "recall": 0.5,
+      "f1": 0.3076923076923077,
+      "support": 4
+    },
+    "family_plan": {
+      "precision": 0.8125,
+      "recall": 0.8666666666666667,
+      "f1": 0.8387096774193549,
+      "support": 15
+    },
+    "feature_and_feedback": {
+      "precision": 0.6666666666666666,
+      "recall": 0.34782608695652173,
+      "f1": 0.45714285714285713,
+      "support": 23
+    },
+    "other": {
+      "precision": 0.4444444444444444,
+      "recall": 0.5714285714285714,
+      "f1": 0.5,
+      "support": 7
+    },
+    "payment_billing": {
+      "precision": 0.9130434782608695,
+      "recall": 0.7777777777777778,
+      "f1": 0.84,
+      "support": 27
+    },
+    "playback_issue": {
+      "precision": 0.7916666666666666,
+      "recall": 0.9047619047619048,
+      "f1": 0.8444444444444444,
+      "support": 21
+    },
+    "subscription_plan": {
+      "precision": 0.8,
+      "recall": 0.8333333333333334,
+      "f1": 0.8163265306122449,
+      "support": 24
+    },
+    "technical_issue": {
+      "precision": 0.8,
+      "recall": 0.7692307692307693,
+      "f1": 0.7843137254901961,
+      "support": 26
+    }
+  },
+  "confusion_matrix": {
+    "account_access": [
+      18,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "appreciation": [
+      1,
+      13,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      2,
+      3
+    ],
+    "content_missing": [
+      0,
+      1,
+      10,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "device_compatibility": [
+      0,
+      0,
+      0,
+      2,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "family_plan": [
+      0,
+      0,
+      0,
+      0,
+      13,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0
+    ],
+    "feature_and_feedback": [
+      0,
+      1,
+      5,
+      1,
+      0,
+      8,
+      2,
+      1,
+      4,
+      0,
+      1
+    ],
+    "other": [
+      0,
+      3,
+      0,
+      0,
+      0,
+      0,
+      4,
+      0,
+      0,
+      0,
+      0
+    ],
+    "payment_billing": [
+      0,
+      0,
+      1,
+      4,
+      0,
+      0,
+      0,
+      21,
+      0,
+      0,
+      1
+    ],
+    "playback_issue": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      19,
+      0,
+      0
+    ],
+    "subscription_plan": [
+      0,
+      0,
+      1,
+      0,
+      2,
+      0,
+      0,
+      1,
+      0,
+      20,
+      0
+    ],
+    "technical_issue": [
+      0,
+      1,
+      2,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      20
+    ]
+  },
+  "runtime_seconds": 16.0
+}

@@ -1,0 +1,18 @@
+{
+  "judge_backend": "deterministic_mock",
+  "judge_human_agreement": {
+    "intent_agreement": 0.745,
+    "escalation_agreement": 0.78,
+    "escalation_cohen_kappa": 0.5082150441488766,
+    "safe_to_auto_rate": 0.485
+  },
+  "reply_adequacy": {
+    "auto_examples_with_gold": 139,
+    "good_rate": 0.30935251798561153,
+    "mean_containment": 0.24777355705643314,
+    "mean_cosine": 0.2170064085753208
+  },
+  "human_escalate_rate": 0.365,
+  "model_escalate_rate": 0.305,
+  "runtime_seconds": 3.6
+}

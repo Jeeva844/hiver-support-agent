@@ -1,0 +1,34 @@
+SAMPLE THREADS FOR Uber_Support
+
+============================================================
+
+CUSTOMER:  @115872 Happy to follow up! Contact us via https://t.co/1xM0TILvAI so we can connect.
+BRAND:     @115872 Happy to follow up! Contact us via https://t.co/1xM0TILvAI so we can connect.
+----
+CUSTOMER:  @115874 We're here to help! Send us a note here, https://t.co/WFtPA6RjWt and our team will be in touch.
+BRAND:     @115874 We're here to help! Send us a note here, https://t.co/WFtPA6RjWt and our team will be in touch.
+----
+CUSTOMER:  @115875 We’re here to help, Travis! Send us a note via https://t.co/dwDjAokZht and we'll be in touch.
+BRAND:     @115875 We’re here to help, Travis! Send us a note via https://t.co/dwDjAokZht and we'll be in touch.
+----
+CUSTOMER:  @115876 For more info about UberEats availability click here; https://t.co/3A9YFZQFaF
+BRAND:     @115876 For more info about UberEats availability click here; https://t.co/3A9YFZQFaF
+----
+CUSTOMER:  @115878 We have received your DM and will follow up with you there.
+BRAND:     @115878 We have received your DM and will follow up with you there.
+----
+CUSTOMER:  @115878 We're sorry to hear this was your experience. Can you send us a DM with your email address so we can connect?
+BRAND:     @115878 We're sorry to hear this was your experience. Can you send us a DM with your email address so we can connect?
+----
+CUSTOMER:  @115880 We're sorry to hear this was your experience, Ray. Please contact us via https://t.co/aBEgvdNWQN and we'll be in touch.
+BRAND:     @115880 We're sorry to hear this was your experience, Ray. Please contact us via https://t.co/aBEgvdNWQN and we'll be in touch.
+----
+CUSTOMER:  @116108 Here to help! Send us a note via https://t.co/xMxswVLBKT so our team can connect.
+BRAND:     @116108 Here to help! Send us a note via https://t.co/xMxswVLBKT so our team can connect.
+----
+CUSTOMER:  @116108 We're here to help! Send us a DM with your email address so we can follow up.
+BRAND:     @116108 We're here to help! Send us a DM with your email address so we can follow up.
+----
+CUSTOMER:  @116109 We have followed up via DM.
+BRAND:     @116109 We have followed up via DM.
+----

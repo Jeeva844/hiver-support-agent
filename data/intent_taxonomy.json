@@ -1,0 +1,261 @@
+{
+  "meta": {
+    "brand": "SpotifyCares",
+    "version": "1.0",
+    "source": "data/processed/spotify_pairs.csv",
+    "method": "exploratory analysis of 40k customer messages: TF-IDF+NMF topic model (14 topics), keyword/bigram frequency analysis, manual review of topic examples and keyword probes",
+    "notes": [
+      "Intents are derived from observed, recurring support interactions for SpotifyCares.",
+      "Intent names are operational buckets; mutual exclusivity is enforced through the boundary fields. When a message fits more than one intent, rules in 'priority' below decide.",
+      "This taxonomy does NOT include channel issues (e.g. 'I cannot DM you') as standalone intents; such messages are treated as technical_issue boundary cases.",
+      "Student discount is folded into subscription_plan because in the data it is overwhelmingly a plan-eligibility/status question, not a refund/charge event."
+    ],
+    "priority_rules": [
+      "payment_billing outranks subscription_plan when money movement (charge, refund, payment failure, double charge) is explicitly mentioned.",
+      "account_access outranks technical_issue when the message is about logging in, password, hacked, locked, or account recovery.",
+      "playback_issue outranks technical_issue when the message is about playback behavior (shuffle, repeat, songs stopping/skipping during listening).",
+      "content_missing covers catalog availability (album/song not there, region availability, release timing). If playback fails because the content is unavailable, use content_missing.",
+      "appreciation outranks everything else when the message contains only thanks/acknowledgment and reports a positive outcome (works now / fixed)."
+    ]
+  },
+  "intents": {
+    "account_access": {
+      "description": "Problems logging in, password resets, hacked/locked accounts, account recovery, email/facebook login issues, 'logged out and can't get back in', or signing into the wrong/another account.",
+      "auto_eligible": true,
+      "escalation_note": "Always escalate when there is any sign of account takeover, fraud, or security concern (hacked, someone changed my password, unrecognized activity). Pure 'forgot password' guidance can be auto-handled.",
+      "examples": [
+        "I need help getting into my mother's account. I try logging in with FB and it says that there was an error.",
+        "Hi, I need to change my password but never receive the reset email when requested, about 10 times now. Not in spam.",
+        "I cannot log in at all after adding my wife to premium family, my account isn't recognized.",
+        "my account got hacked and someone changed my email and password",
+        "why does it keep logging me out of the app on my iphone"
+      ],
+      "negative_examples": [
+        "I can't play any songs on the app", 
+        "how do I get premium",
+        "thanks it works now"
+      ],
+      "boundaries": [
+        "'can't stream' without login context is technical_issue, not account_access.",
+        "'does not remember me on tv' is device/playback, not account_access.",
+        "Payment-status mismatch ('I pay for premium but it shows free') is subscription_plan unless a hack/fraud is implied.",
+        "'I don't want to create a spotify account' in a fraud context belongs to payment_billing (fraud/charge), surfaced to humans."
+      ]
+    },
+    "payment_billing": {
+      "description": "Money movement: unexpected charges, double charges, charge after cancellation, card declined/payment failed, chargeback/fraud on card, refund requests for charges, changing payment method, updating billing card, subscription payment date changes.",
+      "auto_eligible": false,
+      "escalation_note": "Any request that involves changing or querying account-specific payment state (refund, double charge investigation, card on file) requires account verification -> escalate. Purely informational billing FAQs may be auto-answered but cannot be resolved here.",
+      "examples": [
+        "I was charged twice for premium this month, what do I do?",
+        "Why did I get charged $9.99 when I cancelled last week? I want a refund.",
+        "My payment is failing with the new credit card",
+        "Who do I contact to change my subscription date? I would like the payment to come out on the 16th",
+        "there are monthly charges on my statement and I don't even have a spotify account"
+      ],
+      "negative_examples": [
+        "my premium is showing as free even though I pay every month",
+        "can you remove me from the family plan",
+        "thanks for the refund"
+      ],
+      "boundaries": [
+        "'Paying for premium but it is not active' (no money movement incident, just status mismatch) is subscription_plan.",
+        "'I want to cancel my premium' is subscription_plan (plan change); a resulting charge still pending is payment_billing.",
+        "Chargeback/fraud language always escalates to humans regardless of intent."
+      ]
+    },
+    "subscription_plan": {
+      "description": "Plan structure, eligibility and status: upgrading/downgrading free<->premium, trials and promos, student discount signup/extension, 'I pay for premium but it shows free', how much is premium, cancel/complaints about a plan, premium perks, next billing date questions.",
+      "auto_eligible": true,
+      "escalation_note": "Auto-handle informational questions and common standard flows. Escalate when account-specific state change is needed (verify premium status for a specific account) if retrieval evidence is weak.",
+      "examples": [
+        "how do I get premium on spotify",
+        "I paid for premium a month ago and it still isn't activated",
+        "I've had a look at my settings and it says I am assigned to Spotify free when actually I pay every month for premium",
+        "How can I extend my student discount?",
+        "can I cancel my premium subscription"
+      ],
+      "negative_examples": [
+        "I was charged twice this month",
+        "why can't I add my family to the family plan",
+        "my album isn't available yet"
+      ],
+      "boundaries": [
+        "Student discount pricing/management = subscription_plan; a refund/charge event around it = payment_billing.",
+        "Family plan setup/member problems = family_plan (see that intent), NOT subscription_plan.",
+        "'Premium not active but I pay' is a status mismatch -> subscription_plan (escalate if resolution not found retrievably)."
+      ]
+    },
+    "family_plan": {
+      "description": "Premium Family plan: creating/joining a family plan, adding/removing members, family plan address verification, invite/registration errors, ownership questions ('who owns the family plan'), billing interplay with personal premium.",
+      "auto_eligible": false,
+      "escalation_note": "Most family-plan actions require account-specific verification (address match, member invites) -> escalate unless there is a strong historical FAQ match.",
+      "examples": [
+        "how do I add a family member to our premium family plan?",
+        "I cannot add my family to my premium for family plan, I always get an error.",
+        "why cant I register to our family plan?",
+        "hi can u remove me from the family plan as a member?",
+        "does my personal premium need to be cancelled when I join a family plan?"
+      ],
+      "negative_examples": [
+        "how do I cancel my premium",
+        "my seat on a flight", 
+        "thanks, that fixed it"
+      ],
+      "boundaries": [
+        "A credit-card charge related to family plan is payment_billing; the family membership question itself is family_plan.",
+        "Login problems on a family account are account_access."
+      ]
+    },
+    "playback_issue": {
+      "description": "Playback behavior problems: shuffle/repeat not working, songs stopping or skipping mid-play, songs not playing cover-to-cover, random pauses, playback on another device stops, buffering during listening, 'song ends before next starts'.",
+      "auto_eligible": true,
+      "escalation_note": "Auto-handle with standard device troubleshooting. Escalate only if identical fix was already attempted and reported in thread.",
+      "examples": [
+        "my Spotify app will not play an album through cover to cover, instead it goes to shuffle just a few songs in.",
+        "it stops playing randomly, on car bluetooth, wifi, anywhere",
+        "shuffle and repeat button just don't work and i'm getting frustrated",
+        "This is great it has shuffle, but when I switch songs it pauses for 5 seconds",
+        "no repeat button on my app?"
+      ],
+      "negative_examples": [
+        "the app won't open at all",
+        "why isn't this album available",
+        "I can't log in"
+      ],
+      "boundaries": [
+        "'App crashes when I open it' -> technical_issue.",
+        "'Song X is unavailable to play' -> content_missing.",
+        "'Playback fails only on a specific device (tv/watch)' -> device_compatibility if it appears to be about device support, otherwise playback_issue."
+      ]
+    },
+    "technical_issue": {
+      "description": "Software malfunction of the app itself: crashes, won't open/load, freezes, installation/reinstall problems, login via oauth/web-api errors, offline downloads not working, web player broken, unknown errors, app functionality missing after update, 'nothing is working'.",
+      "auto_eligible": true,
+      "escalation_note": "Auto only if retrieval returns a matching known fix; otherwise escalate (multi-turn technical issues rarely resolve on public Twitter).",
+      "examples": [
+        "why does my Spotify stop playing while offline? It is songs I've downloaded.",
+        "my songs are not downloading on my xperia xa1",
+        "the app just crashes when I open it on my android",
+        "Having some issues logging in via oauth and unknown errors being returned from the web api",
+        "Hey, what's up with me having to update my payment info every month? gets annoying."
+      ],
+      "negative_examples": [
+        "I was charged twice",
+        "I can't log in because I forgot my password",
+        "my shuffle doesn't work"
+      ],
+      "boundaries": [
+        "Login/password issues -> account_access.",
+        "Audio playback behavior (shuffle/repeat/skips) -> playback_issue.",
+        "'Song unavailable' -> content_missing.",
+        "Device support question ('is Spotify on Samsung TV?') -> device_compatibility.",
+        "'I can't DM you' (Twitter channel problem) is treated as technical_issue boundary; escalate only if resolution is not retrievable."
+      ]
+    },
+    "device_compatibility": {
+      "description": "Whether/how Spotify works on a device or platform and device linking: Apple Watch, smart TVs, Xbox/PS, Alexa/Google Home/Car, Chromecast, Spotify Connect, desktop/web, disconnecting a device, 'Spotify isn't available on my device'.",
+      "auto_eligible": true,
+      "escalation_note": "Mostly informational (supported device list) -> auto. Escalate when account linking/disconnect is needed (e.g., switch alexa account).",
+      "examples": [
+        "does the apple watch support offline listening yet?",
+        "why isn't spotify on my samsung tv",
+        "how do I disconnect my old account from alexa and connect my premium one?",
+        "can I stream to my chromecast from the app",
+        "I have a premium account, but the account connected to alexa is not premium. want to switch them"
+      ],
+      "negative_examples": [
+        "the app is crashing",
+        "my shuffle doesn't work on my iphone",
+        "I got charged twice for premium"
+      ],
+      "boundaries": [
+        "Playback on a specific device that IS supported (e.g. bluetooth in car) -> playback_issue.",
+        "'Log in on tv' problems -> account_access.",
+        "Device-specific crash dump -> technical_issue."
+      ]
+    },
+    "content_missing": {
+      "description": "Catalog/availability: an album, song, artist or podcast is missing, delayed, region-locked, removed, or renamed. 'Where is X album', 'this song is not available in my country', 'when will X be on Spotify', 'please fix the song name'.",
+      "auto_eligible": true,
+      "escalation_note": "These are label/rights-driven. Auto with informational reply (Spotify cannot add content on request) unless the user alleges a billing/account connection.",
+      "examples": [
+        "WHEREE IS THE ALBUM??",
+        "this song is not available in my country",
+        "please fix the name of this song from the iconic album",
+        "when will you put 'fill up my senses' on spotify",
+        "can't get it on my spotify??? why"
+      ],
+      "negative_examples": [
+        "my app won't play any of my downloaded songs",
+        "I can't log in",
+        "the app keeps crashing"
+      ],
+      "boundaries": [
+        "'Song won't play' with no availability complaint -> playback_issue.",
+        "Region availability questions for a service/plan (Spotify in country X) -> content_missing is acceptable; if it is about payment in that country -> payment_billing.",
+        "A track available but search shows different cover/name -> content_missing (metadata)."
+      ]
+    },
+    "feature_and_feedback": {
+      "description": "Feature requests, product feedback and recommendations: 'please add X feature', 'why can't I do Y', 'your discover tab is bad', presale code questions, feedback about UI/UX, suggestions, complaints about app behavior framed as requests.",
+      "auto_eligible": true,
+      "escalation_note": "Auto-acknowledge (we pass feedback on). No account actions involved.",
+      "examples": [
+        "Are you releasing the presale code for this morning? Not seeing anything",
+        "you really need to work on your discover tab, I play one song and all you recommend is stuff I don't like",
+        "can you please put 'riot' by X on the app",
+        "fell asleep listening to the spice girls and now all of my recommendations are messed up help",
+        "why is part of your app so horrendous"
+      ],
+      "negative_examples": [
+        "my app crashed",
+        "this artist's album is missing",
+        "I want a refund"
+      ],
+      "boundaries": [
+        "'Add this feature so I can play offline' overlapped with technical -> pick feature_and_feedback if the ask is a capability; technical_issue if it is malfunction.",
+        "Presale code requests are feature_and_feedback (marketing/info), not subscription_plan, unless they involve the user's plan."
+      ]
+    },
+    "appreciation": {
+      "description": "Pure thanks/acknowledgment or confirmation that an issue is resolved ('works now', 'fixed', 'thank you'). No open problem stated. Operational action: close conversation / no further action.",
+      "auto_eligible": true,
+      "escalation_note": "Auto-resolve as no-action. Never escalate.",
+      "examples": [
+        "Thank you!",
+        "Dopeee thank u very much",
+        "It's working now :D",
+        "Thanks, homies.",
+        "We're in! Thank you!"
+      ],
+      "negative_examples": [
+        "thanks but it's still not working",
+        "I got charged twice"
+      ],
+      "boundaries": [
+        "'Thanks, but...' messages that state a NEW problem after thanks -> classify by the new problem.",
+        "A message complaining after resolution attempt -> classify by the underlying intent, not appreciation."
+      ]
+    },
+    "other": {
+      "description": "Anything that does not fit the intents above: off-topic, marketing/influencer requests, spam, non-support chatter, ambiguous one-word messages with no recoverable context, or truly unsupported situations.",
+      "auto_eligible": false,
+      "escalation_note": "Default to human review when confidence is low and retrieval evidence is weak.",
+      "examples": [
+        "hello",
+        "can I get a discount on my food I'm broke",
+        "follow me back",
+        "dm me"
+      ],
+      "negative_examples": [
+        "my password doesn't work",
+        "I can't play my songs"
+      ],
+      "boundaries": [
+        "Ambiguous short messages are 'other' unless a signal is strong enough for a specific intent.",
+        "'dm me' as a standalone is 'other' (no recoverable problem); with context (can't dm, need help via dm) use technical_issue/account context."
+      ]
+    }
+  }
+}

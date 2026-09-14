@@ -1,0 +1,146 @@
+{
+  "generated_at": "2026-09-14 21:05:55",
+  "integrity": {
+    "total_rows": 2811774,
+    "unique_authors": 702777,
+    "unique_tweets": 2811774,
+    "duplicate_tweet_ids": 0,
+    "missing_by_column": {
+      "tweet_id": 0,
+      "author_id": 0,
+      "inbound": 0,
+      "created_at": 0,
+      "text": 0,
+      "response_tweet_id": 1040629,
+      "in_response_to_tweet_id": 794335
+    }
+  },
+  "conversation_stats": {
+    "total_conversations": 798012,
+    "single_tweet_conversations": 0,
+    "multi_tweet_conversations": 798012,
+    "median_tweets_per_conversation": 2
+  },
+  "top10": [
+    {
+      "author_id": "AmazonHelp",
+      "total_tweets": 169840,
+      "outbound_tweets": 169840,
+      "inbound_tweets": 0,
+      "brand_replies_to_customer": 168814,
+      "customer_replies_to_brand": 100503,
+      "conversations": 82534,
+      "conversations_with_customer_msg": 0,
+      "responsive_ratio": 0.994,
+      "selection_score": 38000.0
+    },
+    {
+      "author_id": "AppleSupport",
+      "total_tweets": 106860,
+      "outbound_tweets": 106860,
+      "inbound_tweets": 0,
+      "brand_replies_to_customer": 106646,
+      "customer_replies_to_brand": 36658,
+      "conversations": 80702,
+      "conversations_with_customer_msg": 0,
+      "responsive_ratio": 0.998,
+      "selection_score": 33997.4
+    },
+    {
+      "author_id": "Uber_Support",
+      "total_tweets": 56270,
+      "outbound_tweets": 56270,
+      "inbound_tweets": 0,
+      "brand_replies_to_customer": 56160,
+      "customer_replies_to_brand": 22160,
+      "conversations": 41923,
+      "conversations_with_customer_msg": 0,
+      "responsive_ratio": 0.998,
+      "selection_score": 29648.0
+    },
+    {
+      "author_id": "SpotifyCares",
+      "total_tweets": 43265,
+      "outbound_tweets": 43265,
+      "inbound_tweets": 0,
+      "brand_replies_to_customer": 43092,
+      "customer_replies_to_brand": 15096,
+      "conversations": 28280,
+      "conversations_with_customer_msg": 0,
+      "responsive_ratio": 0.996,
+      "selection_score": 24765.6
+    },
+    {
+      "author_id": "Delta",
+      "total_tweets": 42253,
+      "outbound_tweets": 42253,
+      "inbound_tweets": 0,
+      "brand_replies_to_customer": 42114,
+      "customer_replies_to_brand": 14470,
+      "conversations": 26166,
+      "conversations_with_customer_msg": 0,
+      "responsive_ratio": 0.997,
+      "selection_score": 24186.6
+    },
+    {
+      "author_id": "AmericanAir",
+      "total_tweets": 36764,
+      "outbound_tweets": 36764,
+      "inbound_tweets": 0,
+      "brand_replies_to_customer": 36531,
+      "customer_replies_to_brand": 18045,
+      "conversations": 26385,
+      "conversations_with_customer_msg": 0,
+      "responsive_ratio": 0.994,
+      "selection_score": 23025.9
+    },
+    {
+      "author_id": "Tesco",
+      "total_tweets": 38573,
+      "outbound_tweets": 38573,
+      "inbound_tweets": 0,
+      "brand_replies_to_customer": 38468,
+      "customer_replies_to_brand": 12812,
+      "conversations": 16721,
+      "conversations_with_customer_msg": 0,
+      "responsive_ratio": 0.997,
+      "selection_score": 22230.8
+    },
+    {
+      "author_id": "TMobileHelp",
+      "total_tweets": 34317,
+      "outbound_tweets": 34317,
+      "inbound_tweets": 0,
+      "brand_replies_to_customer": 34215,
+      "customer_replies_to_brand": 11662,
+      "conversations": 22789,
+      "conversations_with_customer_msg": 0,
+      "responsive_ratio": 0.997,
+      "selection_score": 20184.6
+    },
+    {
+      "author_id": "VirginTrains",
+      "total_tweets": 27817,
+      "outbound_tweets": 27817,
+      "inbound_tweets": 0,
+      "brand_replies_to_customer": 27416,
+      "customer_replies_to_brand": 18450,
+      "conversations": 14850,
+      "conversations_with_customer_msg": 0,
+      "responsive_ratio": 0.986,
+      "selection_score": 19501.4
+    },
+    {
+      "author_id": "comcastcares",
+      "total_tweets": 33031,
+      "outbound_tweets": 33031,
+      "inbound_tweets": 0,
+      "brand_replies_to_customer": 32921,
+      "customer_replies_to_brand": 8906,
+      "conversations": 24061,
+      "conversations_with_customer_msg": 0,
+      "responsive_ratio": 0.997,
+      "selection_score": 18840.2
+    }
+  ]
+}

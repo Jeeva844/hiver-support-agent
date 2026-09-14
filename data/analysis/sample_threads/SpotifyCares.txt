@@ -1,0 +1,34 @@
+SAMPLE THREADS FOR SpotifyCares
+
+============================================================
+
+CUSTOMER:  @115887 Hmm. Can you try restarting your device by holding the Sleep/Wake + Volume Down buttons for 10 seconds? Keep us posted /LS
+BRAND:     @115887 Hmm. Can you try restarting your device by holding the Sleep/Wake + Volume Down buttons for 10 seconds? Keep us posted /LS
+----
+CUSTOMER:  @115887 Could you send us a DM with your account's email address? We'll take a look backstage /CH https://t.co/ldFdZRiNAt
+BRAND:     @115887 Could you send us a DM with your account's email address? We'll take a look backstage /CH https://t.co/ldFdZRiNAt
+----
+CUSTOMER:  @115887 Thanks. Just to be sure, are you Free or Premium? Also, can you give us more info on what happens when you try using it? /CB
+BRAND:     @115887 Thanks. Just to be sure, are you Free or Premium? Also, can you give us more info on what happens when you try using it? /CB
+----
+CUSTOMER:  @115887 Hey! What device, operating system, and Spotify version are you using? We'll see what we can suggest /CB
+BRAND:     @115887 Hey! What device, operating system, and Spotify version are you using? We'll see what we can suggest /CB
+----
+CUSTOMER:  @115889 Got it. It's not possible at the moment, but we'll pass on the the suggestion. Could you try reinstalling the app? /PB
+BRAND:     @115889 Got it. It's not possible at the moment, but we'll pass on the the suggestion. Could you try reinstalling the app? /PB
+----
+CUSTOMER:  @115889 Sorry to hear that. The Spotify app on Windows Phone is currently in maintenance mode. More info here: https://t.co/KSq4qse4dE /RS
+BRAND:     @115889 Sorry to hear that. The Spotify app on Windows Phone is currently in maintenance mode. More info here: https://t.co/KSq4qse4dE /RS
+----
+CUSTOMER:  @115889 Hey there! That doesn't sound good. What's happening exactly? Can you let us know the app version you're using? /PB
+BRAND:     @115889 Hey there! That doesn't sound good. What's happening exactly? Can you let us know the app version you're using? /PB
+----
+CUSTOMER:  @115891 No worries. If you have other questions, just give us a shout 😉 /GS
+BRAND:     @115891 No worries. If you have other questions, just give us a shout 😉 /GS
+----
+CUSTOMER:  @115891 Hey Mikey! We're afraid there's no way to filter or search that way, but we'll pass that suggestion on to the relevant folks /GS
+BRAND:     @115891 Hey Mikey! We're afraid there's no way to filter or search that way, but we'll pass that suggestion on to the relevant folks /GS
+----
+CUSTOMER:  @116128 Got it! Could you try streaming one of our 15 Stranger Things playlists, then switch to the Now Playing screen? /KB
+BRAND:     @116128 Got it! Could you try streaming one of our 15 Stranger Things playlists, then switch to the Now Playing screen? /KB
+----

@@ -1,0 +1,56 @@
+{
+  "AmazonHelp": {
+    "conversations": 82534,
+    "tweets_in_those_convs_total": 374042,
+    "median_conversation_size": 3.0,
+    "p90_conversation_size": 8.0,
+    "share_convs_with_2_tweets": 37.9,
+    "share_convs_with_ge3_tweets": 62.1,
+    "customer_messages_in_those_convs": 203598
+  },
+  "AppleSupport": {
+    "conversations": 80702,
+    "tweets_in_those_convs_total": 238907,
+    "median_conversation_size": 2.0,
+    "p90_conversation_size": 5.0,
+    "share_convs_with_2_tweets": 65.1,
+    "share_convs_with_ge3_tweets": 34.9,
+    "customer_messages_in_those_convs": 131764
+  },
+  "Uber_Support": {
+    "conversations": 41923,
+    "tweets_in_those_convs_total": 128550,
+    "median_conversation_size": 2.0,
+    "p90_conversation_size": 5.0,
+    "share_convs_with_2_tweets": 64.0,
+    "share_convs_with_ge3_tweets": 36.0,
+    "customer_messages_in_those_convs": 72154
+  },
+  "SpotifyCares": {
+    "conversations": 28280,
+    "tweets_in_those_convs_total": 91889,
+    "median_conversation_size": 2.0,
+    "p90_conversation_size": 6.0,
+    "share_convs_with_2_tweets": 62.9,
+    "share_convs_with_ge3_tweets": 37.1,
+    "customer_messages_in_those_convs": 48543
+  },
+  "Delta": {
+    "conversations": 26166,
+    "tweets_in_those_convs_total": 87994,
+    "median_conversation_size": 2.0,
+    "p90_conversation_size": 6.0,
+    "share_convs_with_2_tweets": 57.4,
+    "share_convs_with_ge3_tweets": 42.6,
+    "customer_messages_in_those_convs": 45296
+  },
+  "Tesco": {
+    "conversations": 16721,
+    "tweets_in_those_convs_total": 73159,
+    "median_conversation_size": 4.0,
+    "p90_conversation_size": 7.0,
+    "share_convs_with_2_tweets": 30.5,
+    "share_convs_with_ge3_tweets": 69.5,
+    "customer_messages_in_those_convs": 34228
+  }
+}

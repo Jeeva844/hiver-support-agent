@@ -1,0 +1,418 @@
+{
+  "n_examples": 200,
+  "n_distinct_tweets": 200,
+  "n_distinct_conversations": 200,
+  "n_distinct_months": 6,
+  "month_tail_share": 0.96,
+  "all_reviewed": true,
+  "intent_distribution": {
+    "payment_billing": 27,
+    "technical_issue": 26,
+    "subscription_plan": 24,
+    "feature_and_feedback": 23,
+    "account_access": 22,
+    "playback_issue": 21,
+    "appreciation": 20,
+    "family_plan": 15,
+    "content_missing": 11,
+    "other": 7,
+    "device_compatibility": 4
+  },
+  "escale_rate_overall": 0.365,
+  "escalate_rate_by_intent": {
+    "account_access": 0.5454545454545454,
+    "appreciation": 0.0,
+    "content_missing": 0.0,
+    "device_compatibility": 0.0,
+    "family_plan": 0.8666666666666667,
+    "feature_and_feedback": 0.0,
+    "other": 0.7142857142857143,
+    "payment_billing": 0.9259259259259259,
+    "playback_issue": 0.09523809523809523,
+    "subscription_plan": 0.5833333333333334,
+    "technical_issue": 0.07692307692307693
+  },
+  "reviewer_vs_first_pass_disagree_rate": 0.255,
+  "disagreements": [
+    {
+      "id": "g001",
+      "first_pass": "subscription_plan",
+      "reviewer": "feature_and_feedback",
+      "escalate": false,
+      "note": "complaint the shuffle-play button should go away on premium; feedback not a plan change"
+    },
+    {
+      "id": "g002",
+      "first_pass": "technical_issue",
+      "reviewer": "appreciation",
+      "escalate": false,
+      "note": "resolved confirmation"
+    },
+    {
+      "id": "g003",
+      "first_pass": "device_compatibility",
+      "reviewer": "payment_billing",
+      "escalate": true,
+      "note": "thread-dependent; payment options/location; low confidence"
+    },
+    {
+      "id": "g004",
+      "first_pass": "content_missing",
+      "reviewer": "playback_issue",
+      "escalate": false,
+      "note": "songs exist but won't play -> playback behaviour, not availability"
+    },
+    {
+      "id": "g012",
+      "first_pass": "device_compatibility",
+      "reviewer": "payment_billing",
+      "escalate": true,
+      "note": "card stuck in forgotten account; needs account lookup"
+    },
+    {
+      "id": "g017",
+      "first_pass": "appreciation",
+      "reviewer": "other",
+      "escalate": true,
+      "note": "DM follow-up; underlying issue unknown -> human"
+    },
+    {
+      "id": "g022",
+      "first_pass": "appreciation",
+      "reviewer": "feature_and_feedback",
+      "escalate": false,
+      "note": "artist-account how-to"
+    },
+    {
+      "id": "g029",
+      "first_pass": "content_missing",
+      "reviewer": "feature_and_feedback",
+      "escalate": false,
+      "note": "feature request"
+    },
+    {
+      "id": "g030",
+      "first_pass": "subscription_plan",
+      "reviewer": "family_plan",
+      "escalate": true,
+      "note": "join error 600"
+    },
+    {
+      "id": "g036",
+      "first_pass": "content_missing",
+      "reviewer": "family_plan",
+      "escalate": true,
+      "note": "member removal state"
+    },
+    {
+      "id": "g037",
+      "first_pass": "appreciation",
+      "reviewer": "feature_and_feedback",
+      "escalate": false,
+      "note": "playlist feature suggestion"
+    },
+    {
+      "id": "g038",
+      "first_pass": "device_compatibility",
+      "reviewer": "technical_issue",
+      "escalate": false,
+      "note": "desktop-only malfunction"
+    },
+    {
+      "id": "g045",
+      "first_pass": "other",
+      "reviewer": "feature_and_feedback",
+      "escalate": false,
+      "note": "sort playlists feature request"
+    },
+    {
+      "id": "g047",
+      "first_pass": "subscription_plan",
+      "reviewer": "appreciation",
+      "escalate": false,
+      "note": "will keep subscription = resolved acknowledgement"
+    },
+    {
+      "id": "g049",
+      "first_pass": "account_access",
+      "reviewer": "appreciation",
+      "escalate": false,
+      "note": "resolved after restart"
+    },
+    {
+      "id": "g053",
+      "first_pass": "content_missing",
+      "reviewer": "subscription_plan",
+      "escalate": false,
+      "note": "free-tier playback restrictions"
+    },
+    {
+      "id": "g057",
+      "first_pass": "playback_issue",
+      "reviewer": "feature_and_feedback",
+      "escalate": false,
+      "note": "free-tier pricing complaint/feedback"
+    },
+    {
+      "id": "g064",
+      "first_pass": "technical_issue",
+      "reviewer": "appreciation",
+      "escalate": false,
+      "note": ""
+    },
+    {
+      "id": "g065",
+      "first_pass": "content_missing",
+      "reviewer": "feature_and_feedback",
+      "escalate": false,
+      "note": "editorial question"
+    },
+    {
+      "id": "g071",
+      "first_pass": "content_missing",
+      "reviewer": "feature_and_feedback",
+      "escalate": false,
+      "note": "third-party feature question"
+    },
+    {
+      "id": "g074",
+      "first_pass": "content_missing",
+      "reviewer": "technical_issue",
+      "escalate": true,
+      "note": "reinstalled + cleared cache, persists (standard fixes exhausted)"
+    },
+    {
+      "id": "g075",
+      "first_pass": "playback_issue",
+      "reviewer": "feature_and_feedback",
+      "escalate": false,
+      "note": "playlist suggestion"
+    },
+    {
+      "id": "g086",
+      "first_pass": "device_compatibility",
+      "reviewer": "subscription_plan",
+      "escalate": false,
+      "note": "gift-card payment question"
+    },
+    {
+      "id": "g088",
+      "first_pass": "feature_and_feedback",
+      "reviewer": "playback_issue",
+      "escalate": false,
+      "note": ""
+    },
+    {
+      "id": "g095",
+      "first_pass": "other",
+      "reviewer": "device_compatibility",
+      "escalate": false,
+      "note": "control center/bluetooth control"
+    },
+    {
+      "id": "g096",
+      "first_pass": "device_compatibility",
+      "reviewer": "account_access",
+      "escalate": true,
+      "note": "unauthorized device (security)"
+    },
+    {
+      "id": "g110",
+      "first_pass": "device_compatibility",
+      "reviewer": "payment_billing",
+      "escalate": true,
+      "note": ""
+    },
+    {
+      "id": "g111",
+      "first_pass": "subscription_plan",
+      "reviewer": "family_plan",
+      "escalate": false,
+      "note": "informational (addresses/travel)"
+    },
+    {
+      "id": "g115",
+      "first_pass": "content_missing",
+      "reviewer": "payment_billing",
+      "escalate": true,
+      "note": "country change with payment info"
+    },
+    {
+      "id": "g118",
+      "first_pass": "device_compatibility",
+      "reviewer": "feature_and_feedback",
+      "escalate": false,
+      "note": "removed feature grievance"
+    },
+    {
+      "id": "g121",
+      "first_pass": "playback_issue",
+      "reviewer": "feature_and_feedback",
+      "escalate": false,
+      "note": "queue UX complaint"
+    },
+    {
+      "id": "g122",
+      "first_pass": "device_compatibility",
+      "reviewer": "appreciation",
+      "escalate": false,
+      "note": ""
+    },
+    {
+      "id": "g127",
+      "first_pass": "appreciation",
+      "reviewer": "content_missing",
+      "escalate": false,
+      "note": "sarcastic thanks re removed music; cancel threat noted, no action requested"
+    },
+    {
+      "id": "g129",
+      "first_pass": "technical_issue",
+      "reviewer": "appreciation",
+      "escalate": false,
+      "note": ""
+    },
+    {
+      "id": "g133",
+      "first_pass": "device_compatibility",
+      "reviewer": "account_access",
+      "escalate": true,
+      "note": "unknown device connecting (security)"
+    },
+    {
+      "id": "g135",
+      "first_pass": "appreciation",
+      "reviewer": "other",
+      "escalate": true,
+      "note": "DM follow-up status request"
+    },
+    {
+      "id": "g136",
+      "first_pass": "subscription_plan",
+      "reviewer": "appreciation",
+      "escalate": false,
+      "note": "positive remark"
+    },
+    {
+      "id": "g142",
+      "first_pass": "feature_and_feedback",
+      "reviewer": "device_compatibility",
+      "escalate": false,
+      "note": "chromecast on windows"
+    },
+    {
+      "id": "g145",
+      "first_pass": "technical_issue",
+      "reviewer": "feature_and_feedback",
+      "escalate": false,
+      "note": "sarcastic feedback"
+    },
+    {
+      "id": "g156",
+      "first_pass": "family_plan",
+      "reviewer": "account_access",
+      "escalate": true,
+      "note": "hackers -> security priority over family_plan"
+    },
+    {
+      "id": "g162",
+      "first_pass": "device_compatibility",
+      "reviewer": "other",
+      "escalate": false,
+      "note": "benign off-topic banter"
+    },
+    {
+      "id": "g163",
+      "first_pass": "feature_and_feedback",
+      "reviewer": "playback_issue",
+      "escalate": false,
+      "note": ""
+    },
+    {
+      "id": "g168",
+      "first_pass": "other",
+      "reviewer": "technical_issue",
+      "escalate": false,
+      "note": "playlist won't load in Windows app"
+    },
+    {
+      "id": "g173",
+      "first_pass": "payment_billing",
+      "reviewer": "feature_and_feedback",
+      "escalate": false,
+      "note": "paypal option request (no charge event)"
+    },
+    {
+      "id": "g174",
+      "first_pass": "device_compatibility",
+      "reviewer": "payment_billing",
+      "escalate": true,
+      "note": ""
+    },
+    {
+      "id": "g175",
+      "first_pass": "other",
+      "reviewer": "feature_and_feedback",
+      "escalate": false,
+      "note": "proxy feedback"
+    },
+    {
+      "id": "g176",
+      "first_pass": "content_missing",
+      "reviewer": "technical_issue",
+      "escalate": false,
+      "note": "alarm feature not working"
+    },
+    {
+      "id": "g178",
+      "first_pass": "device_compatibility",
+      "reviewer": "payment_billing",
+      "escalate": true,
+      "note": ""
+    },
+    {
+      "id": "g180",
+      "first_pass": "subscription_plan",
+      "reviewer": "family_plan",
+      "escalate": true,
+      "note": ""
+    },
+    {
+      "id": "g190",
+      "first_pass": "content_missing",
+      "reviewer": "feature_and_feedback",
+      "escalate": false,
+      "note": "'View Album' access question"
+    },
+    {
+      "id": "g193",
+      "first_pass": "feature_and_feedback",
+      "reviewer": "playback_issue",
+      "escalate": false,
+      "note": ""
+    }
+  ],
+  "schema_columns": [
+    "id",
+    "text",
+    "raw_text",
+    "first_pass_label",
+    "escalation_suggestion",
+    "should_escalate",
+    "human_notes",
+    "customer_tweet_id",
+    "conversation_id",
+    "month",
+    "flag_month_tail",
+    "msg_len",
+    "flag_short",
+    "flag_long",
+    "flag_noisy",
+    "flag_ambiguous",
+    "stratum_bucket",
+    "review_status",
+    "intent",
+    "label_disagrees_with_first_pass",
+    "first_pass_matches"
+  ]
+}

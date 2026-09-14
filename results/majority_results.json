@@ -1,0 +1,236 @@
+{
+  "baseline": "majority_class",
+  "train_size": 40372,
+  "golden_size": 200,
+  "majority_intent": "other",
+  "majority_count_in_train": 16410,
+  "train_intent_distribution": {
+    "other": 16410,
+    "content_missing": 4233,
+    "appreciation": 3323,
+    "technical_issue": 3172,
+    "subscription_plan": 3094,
+    "device_compatibility": 2690,
+    "feature_and_feedback": 2038,
+    "account_access": 1967,
+    "payment_billing": 1942,
+    "playback_issue": 805,
+    "family_plan": 698
+  },
+  "accuracy": 0.035,
+  "macro_f1": 0.006148440931049626,
+  "weighted_f1": 0.002367149758454106,
+  "per_class_f1": {
+    "account_access": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 22
+    },
+    "appreciation": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 20
+    },
+    "content_missing": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 11
+    },
+    "device_compatibility": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 4
+    },
+    "family_plan": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 15
+    },
+    "feature_and_feedback": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 23
+    },
+    "other": {
+      "precision": 0.035,
+      "recall": 1.0,
+      "f1": 0.06763285024154589,
+      "support": 7
+    },
+    "payment_billing": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 27
+    },
+    "playback_issue": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 21
+    },
+    "subscription_plan": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 24
+    },
+    "technical_issue": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 26
+    }
+  },
+  "confusion_matrix": {
+    "account_access": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      22,
+      0,
+      0,
+      0,
+      0
+    ],
+    "appreciation": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      20,
+      0,
+      0,
+      0,
+      0
+    ],
+    "content_missing": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      11,
+      0,
+      0,
+      0,
+      0
+    ],
+    "device_compatibility": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      4,
+      0,
+      0,
+      0,
+      0
+    ],
+    "family_plan": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      15,
+      0,
+      0,
+      0,
+      0
+    ],
+    "feature_and_feedback": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      23,
+      0,
+      0,
+      0,
+      0
+    ],
+    "other": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      7,
+      0,
+      0,
+      0,
+      0
+    ],
+    "payment_billing": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      27,
+      0,
+      0,
+      0,
+      0
+    ],
+    "playback_issue": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      21,
+      0,
+      0,
+      0,
+      0
+    ],
+    "subscription_plan": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      24,
+      0,
+      0,
+      0,
+      0
+    ],
+    "technical_issue": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      26,
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

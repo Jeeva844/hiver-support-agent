@@ -1,0 +1,32 @@
+{
+  "target": 200,
+  "actual": 200,
+  "seed": 42,
+  "bucket_counts": {
+    "subscription_plan": 28,
+    "technical_issue": 26,
+    "payment_billing": 22,
+    "account_access": 20,
+    "content_missing": 20,
+    "playback_issue": 20,
+    "appreciation": 18,
+    "device_compatibility": 14,
+    "family_plan": 12,
+    "feature_and_feedback": 12,
+    "other": 8
+  },
+  "ambiguous_count": 108,
+  "short_count": 7,
+  "long_count": 181,
+  "noisy_count": 60,
+  "month_counts_top": {
+    "2017-11": 99,
+    "2017-10": 75,
+    "2017-12": 18,
+    "2017-09": 6,
+    "2016-09": 1
+  },
+  "distinct_months_sampled": 6,
+  "tail_months_share_pct": 87.0,
+  "distinct_conversations_sampled": 200
+}

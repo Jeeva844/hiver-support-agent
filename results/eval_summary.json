@@ -1,0 +1,47 @@
+{
+  "mode": "quick",
+  "step_runtimes_seconds": {
+    "preprocessing": 0.0,
+    "golden_build": 0.0,
+    "majority_baseline": 4.0,
+    "rule_baseline": 1.8,
+    "classifier_baseline": 17.8,
+    "llm_intent_eval": 1.8,
+    "retrieval_index": 0.0,
+    "retrieval_knn": 5.1,
+    "pipeline_eval": 4.3,
+    "judge_eval": 5.4,
+    "failure_analysis": 0.7,
+    "misleading_metrics": 0.1
+  },
+  "total_seconds": 41.0,
+  "majority_results": {
+    "accuracy": 0.035,
+    "macro_f1": 0.006148440931049626,
+    "weighted_f1": 0.002367149758454106
+  },
+  "rule_results": {
+    "accuracy": 0.745,
+    "macro_f1": 0.694578708276998,
+    "weighted_f1": 0.7545483019012358
+  },
+  "classifier_results": {
+    "accuracy": 0.74,
+    "macro_f1": 0.6909101506020493,
+    "weighted_f1": 0.7410338343725797
+  },
+  "llm_classifier_results": {
+    "accuracy": 0.745,
+    "macro_f1": 0.694578708276998,
+    "weighted_f1": 0.7545483019012358
+  },
+  "retrieval_knn_results": {
+    "accuracy": 0.415,
+    "macro_f1": 0.42490292627326604,
+    "weighted_f1": 0.48912186473481145
+  },
+  "pipeline_results": {
+    "intent_accuracy": 0.745,
+    "intent_macro_f1": 0.694578708276998
+  }
+}

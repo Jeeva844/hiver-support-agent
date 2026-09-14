@@ -1,0 +1,28 @@
+{
+  "brand": "SpotifyCares",
+  "data_path": "data\\raw\\twcs.csv",
+  "total_rows_full_dataset": 2811774,
+  "brand_tweets": 43265,
+  "conversations_involving_brand": 28280,
+  "tweets_in_those_conversations": 91889,
+  "raw_brand_to_customer_pairs": 43092,
+  "usable_pairs": 41064,
+  "dropped": {
+    "empty_or_nan_customer_text": 0,
+    "clean_customer_text_lt_3_chars": 539,
+    "empty_brand_response": 0,
+    "duplicate_customer_tweet_id": 1507
+  },
+  "redirect_reply_pct": 33.6,
+  "distinct_conversations_with_pairs": 28059,
+  "customer_text_len_mean": 88.8,
+  "customer_text_len_median": 85.0,
+  "brand_response_len_mean": 104.6,
+  "brand_response_len_median": 103.0,
+  "trailing_timezone_token_count_in_brand_replies": 0,
+  "time_range": [
+    "2013-09-18 19:26:22",
+    "2017-12-03 22:07:39"
+  ],
+  "runtime_seconds": 46.8
+}

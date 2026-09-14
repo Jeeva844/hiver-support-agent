@@ -1,0 +1,34 @@
+SAMPLE THREADS FOR Delta
+
+============================================================
+
+CUSTOMER:  @115818 Glad to check. Pls, DM your confirmation number for assistance.  *QB https://t.co/6iDGBJAc2m
+BRAND:     @115818 Glad to check. Pls, DM your confirmation number for assistance.  *QB https://t.co/6iDGBJAc2m
+----
+CUSTOMER:  @115882 I'm sorry. The earlier flight may not have been available at the time of your scheduled change. *TMT
+BRAND:     @115882 I'm sorry. The earlier flight may not have been available at the time of your scheduled change. *TMT
+----
+CUSTOMER:  @115882 My apologies. If that flight never showed up on your search, that would mean it was full.  *TMT
+BRAND:     @115882 My apologies. If that flight never showed up on your search, that would mean it was full.  *TMT
+----
+CUSTOMER:  @115883 Please share additional details about the nature of this technical issue.  *AFC
+BRAND:     @115883 Please share additional details about the nature of this technical issue.  *AFC
+----
+CUSTOMER:  @115883 Please do.  *AFC https://t.co/6iDGBJAc2m
+BRAND:     @115883 Please do.  *AFC https://t.co/6iDGBJAc2m
+----
+CUSTOMER:  @115883 I sincerely apologize, our IT team is diligently working on it, we should have it up and working very soon.  *TMC
+BRAND:     @115883 I sincerely apologize, our IT team is diligently working on it, we should have it up and working very soon.  *TMC
+----
+CUSTOMER:  @115884 Oh, no! Please speak to a member of the flt crew for immediate assistance. *AAB
+BRAND:     @115884 Oh, no! Please speak to a member of the flt crew for immediate assistance. *AAB
+----
+CUSTOMER:  @115885 2/2 https://t.co/6iDGBJAc2m
+BRAND:     @115885 2/2 https://t.co/6iDGBJAc2m
+----
+CUSTOMER:  @115885 Hello, Richard! Please DM your confirmation# and I will try to assist. *TCC
+BRAND:     @115885 Hello, Richard! Please DM your confirmation# and I will try to assist. *TCC
+----
+CUSTOMER:  @115885 Hi, Richard. Can you pls DM your confirmation number so I may look into this matter for you? Thanks! *TJF https://t.co/6iDGBJAc2m
+BRAND:     @115885 Hi, Richard. Can you pls DM your confirmation number so I may look into this matter for you? Thanks! *TJF https://t.co/6iDGBJAc2m
+----

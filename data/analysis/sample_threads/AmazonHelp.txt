@@ -1,0 +1,34 @@
+SAMPLE THREADS FOR AmazonHelp
+
+============================================================
+
+CUSTOMER:  @115770 こんにちは、アマゾン公式です。Fire TV Stickが見れないというのは、どのような状況でしょうか。一般的なトラブルシューティングを記載したヘルプがございますので、ご参照ください。https://t.co/2pbG55qJ7h ET
+BRAND:     @115770 こんにちは、アマゾン公式です。Fire TV Stickが見れないというのは、どのような状況でしょうか。一般的なトラブルシューティングを記載したヘルプがございますので、ご参照ください。https://t.co/2pbG55qJ7h ET
+----
+CUSTOMER:  @115770 カスタマーサービスにてお問い合わせ済みとのことで、お手数をおかけいたしました。リプライいただきありがとうございました。ET
+BRAND:     @115770 カスタマーサービスにてお問い合わせ済みとのことで、お手数をおかけいたしました。リプライいただきありがとうございました。ET
+----
+CUSTOMER:  @115770 恐れ入ります。至らない点も多々あるかとは存じますが、今後ともどうぞよろしくお願いします。ET
+BRAND:     @115770 恐れ入ります。至らない点も多々あるかとは存じますが、今後ともどうぞよろしくお願いします。ET
+----
+CUSTOMER:  @115792 ご不便をおかけしております。アプリをご利用でしょうか。強制停止&gt;端末の再起動にて改善する場合がございますので、お試しください。改善しない場合は、状況を確認しご案内させていただきますのでこちらからカスタマーサービスまでご連絡ください。https://t.co/NtNAX2Qh2u ET
+BRAND:     @115792 ご不便をおかけしております。アプリをご利用でしょうか。強制停止&gt;端末の再起動にて改善する場合がございますので、お試しください。改善しない場合は、状況を確認しご案内させていただきますのでこちらからカスタマーサービスまでご連絡ください。https://t.co/NtNAX2Qh2u ET
+----
+CUSTOMER:  @115820 I'm sorry we've let you down! Without providing any personal information, will you describe the issue? We'd love to help. ^TN
+BRAND:     @115820 I'm sorry we've let you down! Without providing any personal information, will you describe the issue? We'd love to help. ^TN
+----
+CUSTOMER:  @115820 We'd like to take a further look into this with you! Please reach us by phone or chat here: https://t.co/hApLpMlfHN ^AG
+BRAND:     @115820 We'd like to take a further look into this with you! Please reach us by phone or chat here: https://t.co/hApLpMlfHN ^AG
+----
+CUSTOMER:  @115822 I am unable to affect your account via Twitter. For real time support, phone or chat use this link: https://t.co/hApLpMlfHN ^CH
+BRAND:     @115822 I am unable to affect your account via Twitter. For real time support, phone or chat use this link: https://t.co/hApLpMlfHN ^CH
+----
+CUSTOMER:  @115824 Hi, wir erhalten die Filme/Serien so vom jeweiligen Studio. Gebe ich aber direkt als Feedback dorthin weiter. Gruß ^JS
+BRAND:     @115824 Hi, wir erhalten die Filme/Serien so vom jeweiligen Studio. Gebe ich aber direkt als Feedback dorthin weiter. Gruß ^JS
+----
+CUSTOMER:  @115824 Wir haben zu danken. Schönen Abend noch. ^JS
+BRAND:     @115824 Wir haben zu danken. Schönen Abend noch. ^JS
+----
+CUSTOMER:  @115826 I'm sorry for the wait. You'll receive an email as soon as we have an estimated delivery date. ^FJ
+BRAND:     @115826 I'm sorry for the wait. You'll receive an email as soon as we have an estimated delivery date. ^FJ
+----

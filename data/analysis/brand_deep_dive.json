@@ -1,0 +1,182 @@
+{
+  "AmazonHelp": {
+    "rank_by_volume": 1,
+    "total_replies": 168814,
+    "reply_len_mean": 123.9,
+    "reply_len_median": 123.0,
+    "reply_len_p10": 71.0,
+    "reply_len_p90": 184.0,
+    "templated_or_redirect_pct": 23.1,
+    "substantive_pairs": 129768,
+    "substantive_pct": 76.9,
+    "customer_nonlatin_pct": 0.9,
+    "sample_substantive": [
+      {
+        "customer": "amazonのfireTVstickが見れない😢",
+        "reply": "@115770 こんにちは、アマゾン公式です。Fire TV Stickが見れないというのは、どのような状況でしょうか。一般的なトラブルシューティングを記載したヘルプがございますので、ご参照ください。https://t.co/2pbG55qJ7h ET"
+      },
+      {
+        "customer": "@AmazonHelp 電話で対応してもらいましたが改良されませんでした。\n保証期間も過ぎてるので買い直しになるんでしょうね。",
+        "reply": "@115770 カスタマーサービスにてお問い合わせ済みとのことで、お手数をおかけいたしました。リプライいただきありがとうございました。ET"
+      },
+      {
+        "customer": "@AmazonHelp こちらこそありがとうございました。",
+        "reply": "@115770 恐れ入ります。至らない点も多々あるかとは存じますが、今後ともどうぞよろしくお願いします。ET"
+      },
+      {
+        "customer": "amazonプライムビデオ、再生エラーが多いです",
+        "reply": "@115792 ご不便をおかけしております。アプリをご利用でしょうか。強制停止&gt;端末の再起動にて改善する場合がございますので、お試しください。改善しない場合は、状況を確認しご案内させていただきますのでこちらからカスタマーサービスまでご連絡ください。https://t.co/NtNAX2Qh2u ET"
+      }
+    ]
+  },
+  "AppleSupport": {
+    "rank_by_volume": 2,
+    "total_replies": 106646,
+    "reply_len_mean": 136.6,
+    "reply_len_median": 129.0,
+    "reply_len_p10": 91.0,
+    "reply_len_p90": 193.0,
+    "templated_or_redirect_pct": 16.9,
+    "substantive_pairs": 88641,
+    "substantive_pct": 83.1,
+    "customer_nonlatin_pct": 0.0,
+    "sample_substantive": [
+      {
+        "customer": "@AppleSupport  https://t.co/NV0yucs0lB",
+        "reply": "@115854 We're here for you. Which version of the iOS are you running? Check from Settings &gt; General &gt; About."
+      },
+      {
+        "customer": "@AppleSupport The newest update. I️ made sure to download it yesterday.",
+        "reply": "@115854 Lets take a closer look into this issue. Select the following link to join us in a DM and we'll go from there. https://t.co/GDrqU22YpT"
+      },
+      {
+        "customer": "@AppleSupport This is what it looks like https://t.co/XCQU2l4xUB",
+        "reply": "@115855 Any steps tried since it started last night?"
+      },
+      {
+        "customer": "@AppleSupport I️ have an iPhone 7 Plus and yes I️ do",
+        "reply": "@115855 That's great it has iOS 11.1 as we can rule out being outdated. Any steps tried since this started? Do you recall when it started?"
+      }
+    ]
+  },
+  "Uber_Support": {
+    "rank_by_volume": 3,
+    "total_replies": 56160,
+    "reply_len_mean": 110.1,
+    "reply_len_median": 104.0,
+    "reply_len_p10": 82.0,
+    "reply_len_p90": 144.0,
+    "templated_or_redirect_pct": 58.6,
+    "substantive_pairs": 23246,
+    "substantive_pct": 41.4,
+    "customer_nonlatin_pct": 0.0,
+    "sample_substantive": [
+      {
+        "customer": "@Uber_Support Why is there no phone number ?? I'm literally stranded and now I have to wait for an automated reply this is ridiculous",
+        "reply": "@115878 We have received your DM and will follow up with you there."
+      },
+      {
+        "customer": "@Uber_Support I already dm y'all about 30 mins ago, check it out it is long and detailed.",
+        "reply": "@116111 We're currently reviewing your email and will be in touch shortly. We appreciate your patience!"
+      },
+      {
+        "customer": "@Uber_Support i do not see we're the trid if is listed on the app.. i sent in a few message",
+        "reply": "@116113 Please DM us with your account email address and phone number so we can look into this. https://t.co/sd7yH5jmbJ"
+      },
+      {
+        "customer": "@115877 hey, I was wondering if you could give me a discount on my food I'm broke!",
+        "reply": "@116265 Happy to help! Please visit this link; https://t.co/qfimGYE4QO to know more about how to get a free food."
+      }
+    ]
+  },
+  "SpotifyCares": {
+    "rank_by_volume": 4,
+    "total_replies": 43092,
+    "reply_len_mean": 129.5,
+    "reply_len_median": 131.0,
+    "reply_len_p10": 90.0,
+    "reply_len_p90": 160.0,
+    "templated_or_redirect_pct": 8.0,
+    "substantive_pairs": 39638,
+    "substantive_pct": 92.0,
+    "customer_nonlatin_pct": 0.1,
+    "sample_substantive": [
+      {
+        "customer": "@SpotifyCares Premium &amp; when i️ have it on shuffle it turns off when the song is done and just plays in order and the repeat lights up but doesn’t repeat",
+        "reply": "@115887 Hmm. Can you try restarting your device by holding the Sleep/Wake + Volume Down buttons for 10 seconds? Keep us posted /LS"
+      },
+      {
+        "customer": "@SpotifyCares iphone 7+ and i have the most recent update for spotify",
+        "reply": "@115887 Thanks. Just to be sure, are you Free or Premium? Also, can you give us more info on what happens when you try using it? /CB"
+      },
+      {
+        "customer": "i’m pissed my @115888 shuffle and repeat button just don’t fucking work and i’m getting frustrated",
+        "reply": "@115887 Hey! What device, operating system, and Spotify version are you using? We'll see what we can suggest /CB"
+      },
+      {
+        "customer": "@SpotifyCares 2/2... and there is no way to manage Albums (recently added e.g.) in the App. It's a mess 😲 https://t.co/RlWuqllt8S",
+        "reply": "@115889 Got it. It's not possible at the moment, but we'll pass on the the suggestion. Could you try reinstalling the app? /PB"
+      }
+    ]
+  },
+  "Delta": {
+    "rank_by_volume": 5,
+    "total_replies": 42114,
+    "reply_len_mean": 103.9,
+    "reply_len_median": 102.0,
+    "reply_len_p10": 44.0,
+    "reply_len_p90": 148.0,
+    "templated_or_redirect_pct": 20.6,
+    "substantive_pairs": 33430,
+    "substantive_pct": 79.4,
+    "customer_nonlatin_pct": 0.0,
+    "sample_substantive": [
+      {
+        "customer": "@DELTA i booked my flight using delta amex card. Checking in now &amp; was being charged for baggage",
+        "reply": "@115818 Glad to check. Pls, DM your confirmation number for assistance.  *QB https://t.co/6iDGBJAc2m"
+      },
+      {
+        "customer": "@Delta I checked daily and flight 1403 was never offered as an option as I most certainly would have made the adjust on my trip.",
+        "reply": "@115882 My apologies. If that flight never showed up on your search, that would mean it was full.  *TMT"
+      },
+      {
+        "customer": "@Delta It seems this technical issue still hasn't Ben fixed.   Can you look into it again?  🙆🏼‍♂️",
+        "reply": "@115883 Please share additional details about the nature of this technical issue.  *AFC"
+      },
+      {
+        "customer": "@Delta The \"change flight\" search option on your website is broken once again.  😑",
+        "reply": "@115883 I sincerely apologize, our IT team is diligently working on it, we should have it up and working very soon.  *TMC"
+      }
+    ]
+  },
+  "Tesco": {
+    "rank_by_volume": 6,
+    "total_replies": 38468,
+    "reply_len_mean": 138.9,
+    "reply_len_median": 134.0,
+    "reply_len_p10": 85.0,
+    "reply_len_p90": 217.0,
+    "templated_or_redirect_pct": 24.0,
+    "substantive_pairs": 29224,
+    "substantive_pct": 76.0,
+    "customer_nonlatin_pct": 0.0,
+    "sample_substantive": [
+      {
+        "customer": "@Tesco Tall lady 6ft, slim, was on the till about 15:10, think she had blonde hair. She served the guy after knowing he didn’t queue up like others",
+        "reply": "@115881 Hi Cade, thanks so much for sending that over. I have sent an email to the Store Manager to look into this for you. 1/2"
+      },
+      {
+        "customer": "@Tesco 3/3 on the wrong which I really don’t appreciate. This needs to be investigate and I was simply queuing to pay and the guy pushed in😡",
+        "reply": "@115881 Hi Cade, what was my colleagues name? Can you give a description? When were you in our store? - Nick"
+      },
+      {
+        "customer": "@Tesco are complaints taken seriously? Do you take customer complaints seriously or just pay it lip service???",
+        "reply": "@116114 Hi there, I've replied to your DM about this. Apologies - Josh"
+      },
+      {
+        "customer": "@116116 @Tesco  https://t.co/OOFePDl9eC",
+        "reply": "@116115 Hi James, would you be able to let me know how many bottles of lemonade were in stock at the time you were there? Thanks - Callum"
+      }
+    ]
+  }
+}

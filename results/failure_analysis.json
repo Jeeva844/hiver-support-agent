@@ -1,0 +1,279 @@
+{
+  "n_examples": 200,
+  "intent_errors": {
+    "count": 51,
+    "rate": 0.255,
+    "top_confusions": [
+      {
+        "human": "payment_billing",
+        "pred": "device_compatibility",
+        "count": 5
+      },
+      {
+        "human": "feature_and_feedback",
+        "pred": "content_missing",
+        "count": 4
+      },
+      {
+        "human": "appreciation",
+        "pred": "technical_issue",
+        "count": 3
+      },
+      {
+        "human": "family_plan",
+        "pred": "subscription_plan",
+        "count": 3
+      },
+      {
+        "human": "feature_and_feedback",
+        "pred": "playback_issue",
+        "count": 3
+      },
+      {
+        "human": "playback_issue",
+        "pred": "feature_and_feedback",
+        "count": 3
+      },
+      {
+        "human": "other",
+        "pred": "appreciation",
+        "count": 2
+      },
+      {
+        "human": "feature_and_feedback",
+        "pred": "appreciation",
+        "count": 2
+      },
+      {
+        "human": "feature_and_feedback",
+        "pred": "other",
+        "count": 2
+      },
+      {
+        "human": "appreciation",
+        "pred": "subscription_plan",
+        "count": 2
+      },
+      {
+        "human": "technical_issue",
+        "pred": "content_missing",
+        "count": 2
+      },
+      {
+        "human": "account_access",
+        "pred": "device_compatibility",
+        "count": 2
+      }
+    ],
+    "samples": [
+      {
+        "id": "g001",
+        "human_intent": "feature_and_feedback",
+        "pred_intent": "subscription_plan",
+        "confidence": 0.6
+      },
+      {
+        "id": "g002",
+        "human_intent": "appreciation",
+        "pred_intent": "technical_issue",
+        "confidence": 0.6
+      },
+      {
+        "id": "g003",
+        "human_intent": "payment_billing",
+        "pred_intent": "device_compatibility",
+        "confidence": 0.6
+      },
+      {
+        "id": "g004",
+        "human_intent": "playback_issue",
+        "pred_intent": "content_missing",
+        "confidence": 0.6
+      },
+      {
+        "id": "g012",
+        "human_intent": "payment_billing",
+        "pred_intent": "device_compatibility",
+        "confidence": 0.6
+      },
+      {
+        "id": "g017",
+        "human_intent": "other",
+        "pred_intent": "appreciation",
+        "confidence": 0.85
+      },
+      {
+        "id": "g022",
+        "human_intent": "feature_and_feedback",
+        "pred_intent": "appreciation",
+        "confidence": 0.85
+      },
+      {
+        "id": "g029",
+        "human_intent": "feature_and_feedback",
+        "pred_intent": "content_missing",
+        "confidence": 0.85
+      },
+      {
+        "id": "g030",
+        "human_intent": "family_plan",
+        "pred_intent": "subscription_plan",
+        "confidence": 0.6
+      },
+      {
+        "id": "g036",
+        "human_intent": "family_plan",
+        "pred_intent": "content_missing",
+        "confidence": 0.6
+      },
+      {
+        "id": "g037",
+        "human_intent": "feature_and_feedback",
+        "pred_intent": "appreciation",
+        "confidence": 0.85
+      },
+      {
+        "id": "g038",
+        "human_intent": "technical_issue",
+        "pred_intent": "device_compatibility",
+        "confidence": 0.85
+      }
+    ]
+  },
+  "escalation_false_positives": {
+    "count": 16,
+    "rate": 0.08,
+    "reasons": [
+      [
+        "account access, low signal -> verify",
+        6
+      ],
+      [
+        "other requires account verification or human review",
+        5
+      ],
+      [
+        "payment_billing requires account verification or human review",
+        3
+      ],
+      [
+        "family_plan requires account verification or human review",
+        1
+      ],
+      [
+        "standard fixes already attempted",
+        1
+      ]
+    ],
+    "sample_ids": [
+      "g025",
+      "g045",
+      "g049",
+      "g051",
+      "g068",
+      "g081",
+      "g085",
+      "g095",
+      "g132",
+      "g164"
+    ]
+  },
+  "escalation_false_negatives": {
+    "count": 28,
+    "rate": 0.14,
+    "reasons": [
+      [
+        "informational plan/premium FAQ",
+        10
+      ],
+      [
+        "device_compatibility is informational/acknowledge-only",
+        7
+      ],
+      [
+        "password guidance is self-serve",
+        3
+      ],
+      [
+        "content_missing is informational/acknowledge-only",
+        3
+      ],
+      [
+        "standard troubleshooting offered",
+        3
+      ],
+      [
+        "appreciation = no action",
+        2
+      ]
+    ],
+    "sample_ids": [
+      "g000",
+      "g003",
+      "g012",
+      "g017",
+      "g018",
+      "g021",
+      "g031",
+      "g036",
+      "g063",
+      "g074"
+    ]
+  },
+  "reply_failures": {
+    "count": 96,
+    "rate_among_auto": 0.6906474820143885,
+    "mean_containment": 0.1171175520774783,
+    "mean_cosine": 0.07712525006227623,
+    "samples": [
+      {
+        "id": "g001",
+        "confidence": 0.6,
+        "containment": 0.1333333333333333,
+        "cosine": 0.0590893541322049
+      },
+      {
+        "id": "g002",
+        "confidence": 0.6,
+        "containment": 0.1818181818181818,
+        "cosine": 0.2489952778483119
+      },
+      {
+        "id": "g003",
+        "confidence": 0.6,
+        "containment": 0.1176470588235294,
+        "cosine": 0.0329007405120574
+      },
+      {
+        "id": "g004",
+        "confidence": 0.6,
+        "containment": 0.2352941176470588,
+        "cosine": 0.1334473005443171
+      },
+      {
+        "id": "g005",
+        "confidence": 0.85,
+        "containment": 0.0,
+        "cosine": 0.0191008770286284
+      },
+      {
+        "id": "g009",
+        "confidence": 0.85,
+        "containment": 0.0,
+        "cosine": 0.0216053039261662
+      },
+      {
+        "id": "g011",
+        "confidence": 0.6,
+        "containment": 0.1,
+        "cosine": 0.0250757941281204
+      },
+      {
+        "id": "g012",
+        "confidence": 0.6,
+        "containment": 0.1428571428571428,
+        "cosine": 0.1065596202300966
+      }
+    ]
+  }
+}

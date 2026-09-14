@@ -1,0 +1,60 @@
+{
+  "headline_that_would_be_misleading": "The agent correctly resolves 74.5% of customer messages and escalates the rest.",
+  "why_misleading": [
+    "resolution != intent-label agreement (reply adequacy only 30.9% judged 'good')",
+    "accuracy vs macro-F1 gap ignores rare-class customers",
+    "escalation accuracy hides a dangerous under-escalation bias (recall 0.616)",
+    "golden set class mix is artificial, not production-scaled",
+    "labels are weak-supervised; part of the 'error' is label noise, not model quality",
+    "baselines achieve the same number; the margin over rule-based is ~0",
+    "model is temporally blind to anything after 2017",
+    "mock mode: identical numbers can vary once a real LLM is switched in"
+  ],
+  "numbers_used": {
+    "intent_accuracy": 0.745,
+    "intent_macro_f1": 0.694578708276998,
+    "reply_good_rate": 0.30935251798561153,
+    "escalation": {
+      "accuracy": 0.78,
+      "precision": 0.7377049180327869,
+      "recall": 0.6164383561643836,
+      "f1": 0.6716417910447762,
+      "human_escalate_rate": 0.365,
+      "model_escalate_rate": 0.305
+    },
+    "safe_to_auto_rate": 0.485,
+    "rule_baseline_accuracy": 0.745,
+    "golden_reviewer_disagreement_rate": 0.255,
+    "bayes_prior_heavy_class_share": 27
+  },
+  "sections": [
+    {
+      "title": "1. Accuracy hides class-prior effects",
+      "text": "Intent accuracy is dominated by the common classes. macro-F1 (0.695) is below accuracy (0.745); classes with tiny support (device_compatibility support=4) contribute almost nothing to accuracy but matter to a customer whose device is the problem. A 0.745 accuracy claim says almost nothing about the tail."
+    },
+    {
+      "title": "2. Intent-correct does NOT mean resolved",
+      "text": "Label agreement is the wrong unit for an agent. The judge found only 30.9% of auto-replies lexically adequate vs the historical human reply (mean containment 0.248), and only 48.5% of traffic is judged 'safe to auto-serve'. Most promising deflection is right, but resolution quality is the binding constraint — accuracy does not measure it at all."
+    },
+    {
+      "title": "3. Escalation 'accuracy' masks cost asymmetry",
+      "text": "Escalation accuracy 0.780 treats false positives and false negatives equally, but their costs differ: FP (16) wastes a human's time; FN (28) sends an unverified reply about money/security to a user. Precision 0.738 vs recall 0.616 shows the agent under-escalates exactly where it is most dangerous."
+    },
+    {
+      "title": "4. The evaluation distribution is artificial",
+      "text": "The golden set used per-bucket quotas so rare intents are guaranteed (e.g. other=8, device_compatibility=4), but real production traffic is heavily skewed (99.96% of all data falls in 2017; the underlying label distribution is different). Reported metrics are calibrated to an intentionally balanced set, not to production reality."
+    },
+    {
+      "title": "5. Weak (first-pass) labels cap everything",
+      "text": "All training labels come from a keyword labeler whose disagreement with the human reviewer is 25.5%. The TF-IDF classifier (0.740) cannot beat its weak teacher, so the 0.745 headline includes label noise as if it were model error."
+    },
+    {
+      "title": "6. Baselines vitiate the claim",
+      "text": "The rule labeler alone already reaches 0.745 accuracy and 0.695 macro-F1 it is the same component as the mock LLM (0.745). A headline that implies novelty over trivial baselines would overstate the contribution."
+    },
+    {
+      "title": "7. Temporal blindness",
+      "text": "Training is ~all from Oct-Nov 2017 (95%). The agent has never seen a post-2017 Spotify product cycle; any accuracy number generalises only to 2017-era English-language support interactions."
+    }
+  ]
+}
