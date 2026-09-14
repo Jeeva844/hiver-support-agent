@@ -3,7 +3,9 @@ import json
 from pathlib import Path
 from typing import Any
 
-TAXONOMY_PATH = Path("data/intent_taxonomy.json")
+TAXONOMY_PATH = (
+    Path(__file__).resolve().parent.parent / "data" / "intent_taxonomy.json"
+)
 
 
 class TaxonomyError(Exception):

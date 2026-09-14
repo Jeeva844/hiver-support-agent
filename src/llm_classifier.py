@@ -21,6 +21,7 @@ from pathlib import Path
 from dotenv import load_dotenv
 
 from intents import load_taxonomy
+from intents import TAXONOMY_PATH
 from rule_labeler import first_pass_intent
 from intents import TaxonomyError
 
@@ -45,7 +46,7 @@ Rules:
 class LLMIntentClassifier:
     def __init__(
         self,
-        taxonomy_path: Path | str = Path("data/intent_taxonomy.json"),
+        taxonomy_path: Path | str = TAXONOMY_PATH,
         model: str | None = None,
         max_retries: int = 2,
     ) -> None:

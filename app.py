@@ -8,11 +8,12 @@ from pathlib import Path
 import pandas as pd
 import streamlit as st
 
-sys.path.insert(0, str(Path(__file__).resolve().parent / "src"))
+ROOT = Path(__file__).resolve().parent
+sys.path.insert(0, str(ROOT / "src"))
 
 from pipeline import Pipeline  # noqa: E402
 
-GOLDEN_PATH = Path("data/golden/golden_set.csv")
+GOLDEN_PATH = ROOT / "data" / "golden" / "golden_set.csv"
 
 
 @st.cache_resource(show_spinner="Loading agent pipeline...")
