@@ -5,3 +5,4 @@ kaggle>=2.2
 python-dotenv>=1.0
 joblib>=1.6
 pytest>=7.4
+streamlit>=1.63

@@ -23,6 +23,16 @@ python -m pytest tests -q                  # 17 tests
 `--quick` finishes in tens of seconds (target was < 15 minutes). All results are
 written to `results/*.json`; the human-readable story is in `REPORT.md`.
 
+## Web UI
+
+```powershell
+streamlit run app.py        # opens http://localhost:8501 in your browser
+```
+
+Two tabs: **Run the agent** (type a message, see intent / confidence /
+escalation / grounded reply + retrieval provenance) and **Golden-set explorer**
+(test any of the 200 hand-reviewed cases and see ✓/✗ vs the human label).
+
 ## Project structure
 
 ```
